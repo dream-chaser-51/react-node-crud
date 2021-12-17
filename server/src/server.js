@@ -23,7 +23,7 @@ function addMiddleware(app) {
   app.use(morgan('combined'));
   app.use(express.json({ limit: '50mb' }));
   app.use(cors());
-  //app.use('/uploads', express.static(path.join(__dirname, '../shared')));
+  //app.use('/uploads', express.static(path.join(__dirname, 'shared')));
 }
 
 function addRoutes(app) {
